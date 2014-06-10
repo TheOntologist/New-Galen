@@ -1,0 +1,957 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#"
+     xml:base="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Humours, elements and biles.</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#comment"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#displays -->
+
+    <owl:ObjectProperty rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#displays"/>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#hasCause -->
+
+    <owl:ObjectProperty rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#hasCause">
+        <owl:inverseOf rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#isCausedBy"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#hasPart -->
+
+    <owl:ObjectProperty rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#hasPart">
+        <owl:inverseOf rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#isPartOf"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#hasPredominationOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#hasPredominationOf"/>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#hasSeason -->
+
+    <owl:ObjectProperty rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#hasSeason">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Humour"/>
+        <rdfs:range rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Season"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#hasState -->
+
+    <owl:ObjectProperty rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#hasState">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Humour"/>
+        <rdfs:range rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#State"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#isCausedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#isCausedBy"/>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#isDisplayOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#isDisplayOf"/>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#isPartOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#isPartOf"/>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#predominatesIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#predominatesIn">
+        <owl:inverseOf rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#hasPredominationOf"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Air -->
+
+    <owl:Class rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Air">
+        <rdfs:label>Air</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#DomainEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Autumn -->
+
+    <owl:Class rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Autumn">
+        <rdfs:label>Autumn</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#DomainEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Balance -->
+
+    <owl:Class rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Balance">
+        <rdfs:label>Balance</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#DomainEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#BalancedHumourBody -->
+
+    <owl:Class rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#BalancedHumourBody">
+        <rdfs:label>Balanced humour body</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Body"/>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#hasPart"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Humour"/>
+                                            <owl:Class>
+                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#hasState"/>
+                                                        <owl:someValuesFrom rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Balance"/>
+                                                    </owl:Restriction>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#hasState"/>
+                                                        <owl:allValuesFrom rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Balance"/>
+                                                    </owl:Restriction>
+                                                </owl:intersectionOf>
+                                            </owl:Class>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#hasPart"/>
+                                <owl:allValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Humour"/>
+                                            <owl:Class>
+                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#hasState"/>
+                                                        <owl:someValuesFrom rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Balance"/>
+                                                    </owl:Restriction>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#hasState"/>
+                                                        <owl:allValuesFrom rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Balance"/>
+                                                    </owl:Restriction>
+                                                </owl:intersectionOf>
+                                            </owl:Class>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:allValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#BlackBile -->
+
+    <owl:Class rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#BlackBile">
+        <rdfs:label>Black bile</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#DomainEntity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#hasPredominationOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Earth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#hasSeason"/>
+                <owl:someValuesFrom rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Autumn"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Blood -->
+
+    <owl:Class rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Blood">
+        <rdfs:label>Blood</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#DomainEntity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#hasPredominationOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Air"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#hasSeason"/>
+                <owl:someValuesFrom rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Spring"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#hasPredominationOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Water"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#hasPredominationOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Fire"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#hasPredominationOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Earth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Body -->
+
+    <owl:Class rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Body">
+        <rdfs:label>Body</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#DomainEntity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#hasPart"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Humour"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#hasState"/>
+                                <owl:someValuesFrom rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#State"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#displays"/>
+                <owl:someValuesFrom rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#temperment"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Choleric -->
+
+    <owl:Class rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Choleric">
+        <rdfs:label>Coleric</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#DomainEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#CholericBody -->
+
+    <owl:Class rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#CholericBody">
+        <rdfs:label>Coleric body</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Body"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#hasPart"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#YellowBile"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#hasState"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Excess"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#displays"/>
+                <owl:someValuesFrom rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Melancholia"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Deficit -->
+
+    <owl:Class rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Deficit">
+        <rdfs:label>Deficit</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#DomainEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Disease -->
+
+    <owl:Class rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Disease">
+        <rdfs:label>Disease</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#DomainEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#DomainEntity -->
+
+    <owl:Class rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#DomainEntity"/>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Earth -->
+
+    <owl:Class rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Earth">
+        <rdfs:label>Earth</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#DomainEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#EarthyPerson -->
+
+    <owl:Class rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#EarthyPerson">
+        <rdfs:label>Earthy person</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Body"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#hasPart"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Humour"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#hasPredominationOf"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Earth"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Element -->
+
+    <owl:Class rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Element">
+        <rdfs:label>Element</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Air"/>
+                    <rdf:Description rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Earth"/>
+                    <rdf:Description rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Fire"/>
+                    <rdf:Description rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Water"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Excess -->
+
+    <owl:Class rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Excess">
+        <rdfs:label>Excess</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#DomainEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Fire -->
+
+    <owl:Class rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Fire">
+        <rdfs:label>Fire</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#DomainEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Humour -->
+
+    <owl:Class rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Humour">
+        <rdfs:label>Humour</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#BlackBile"/>
+                    <rdf:Description rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Blood"/>
+                    <rdf:Description rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Phlegm"/>
+                    <rdf:Description rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#YellowBile"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Melancholia -->
+
+    <owl:Class rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Melancholia">
+        <rdfs:label>Melancolia</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#DomainEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#MelancolicBody -->
+
+    <owl:Class rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#MelancolicBody">
+        <rdfs:label>Melancolic body</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Body"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#hasPart"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#BlackBile"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#hasState"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Excess"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#displays"/>
+                <owl:someValuesFrom rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Melancholia"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#MortificationOfThePrivyParts -->
+
+    <owl:Class rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#MortificationOfThePrivyParts">
+        <rdfs:label>Mortification of the privy parts</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Disease"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#isCausedBy"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Body"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#hasPart"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Phlegm"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#hasState"/>
+                                                <owl:someValuesFrom rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Excess"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Phlegm -->
+
+    <owl:Class rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Phlegm">
+        <rdfs:label>Phlegm</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#DomainEntity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#hasPredominationOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Water"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#hasSeason"/>
+                <owl:someValuesFrom rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Winter"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Phlegmatic -->
+
+    <owl:Class rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Phlegmatic">
+        <rdfs:label>Phlegmatic</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#DomainEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#PhlegmaticBody -->
+
+    <owl:Class rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#PhlegmaticBody">
+        <rdfs:label>Phlegmatic body</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Body"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#hasPart"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Phlegm"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#hasState"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Excess"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#displays"/>
+                <owl:someValuesFrom rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Phlegmatic"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Sanguine -->
+
+    <owl:Class rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Sanguine">
+        <rdfs:label>Sanguine</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#DomainEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#SanguineBody -->
+
+    <owl:Class rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#SanguineBody">
+        <rdfs:label>Sanguine body</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Body"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#hasPart"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Blood"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#hasState"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Excess"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#displays"/>
+                <owl:someValuesFrom rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Sanguine"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Season -->
+
+    <owl:Class rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Season">
+        <rdfs:label>Season</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Autumn"/>
+                    <rdf:Description rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Spring"/>
+                    <rdf:Description rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Summer"/>
+                    <rdf:Description rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Winter"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Spring -->
+
+    <owl:Class rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Spring">
+        <rdfs:label>Spring</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#DomainEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#State -->
+
+    <owl:Class rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#State">
+        <rdfs:label>State</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Balance"/>
+                    <rdf:Description rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Deficit"/>
+                    <rdf:Description rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Excess"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Summer -->
+
+    <owl:Class rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Summer">
+        <rdfs:label>Summer</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#DomainEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#SummeryPerson -->
+
+    <owl:Class rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#SummeryPerson">
+        <rdfs:label>Summery person</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Body"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#hasPart"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Humour"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#hasSeason"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Summer"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#hasPart"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#BlackBile"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#hasPredominationOf"/>
+                                <owl:someValuesFrom rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Earth"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#UnbalancedHumourBody -->
+
+    <owl:Class rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#UnbalancedHumourBody">
+        <rdfs:label>Unbalanced humour body</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Body"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#hasPart"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Humour"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#hasState"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:unionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Deficit"/>
+                                                    <rdf:Description rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Excess"/>
+                                                </owl:unionOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Water -->
+
+    <owl:Class rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Water">
+        <rdfs:label>Water</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#DomainEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Winter -->
+
+    <owl:Class rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Winter">
+        <rdfs:label>Winter</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#DomainEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#YellowBile -->
+
+    <owl:Class rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#YellowBile">
+        <rdfs:label>Yellow bile</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#DomainEntity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#hasPredominationOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Fire"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#hasSeason"/>
+                <owl:someValuesFrom rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Summer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#quinsy -->
+
+    <owl:Class rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#quinsy">
+        <rdfs:label>Quinsy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Disease"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#isCausedBy"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Body"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#hasPart"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Phlegm"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#hasState"/>
+                                                <owl:someValuesFrom rdf:resource="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Excess"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#temperment -->
+
+    <owl:Class rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#temperment">
+        <rdfs:label>Temprament</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Choleric"/>
+                    <rdf:Description rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Melancholia"/>
+                    <rdf:Description rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Phlegmatic"/>
+                    <rdf:Description rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Sanguine"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Choleric"/>
+            <rdf:Description rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Melancholia"/>
+            <rdf:Description rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Phlegmatic"/>
+            <rdf:Description rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Sanguine"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#BlackBile"/>
+            <rdf:Description rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Blood"/>
+            <rdf:Description rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Phlegm"/>
+            <rdf:Description rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#YellowBile"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Autumn"/>
+            <rdf:Description rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Spring"/>
+            <rdf:Description rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Summer"/>
+            <rdf:Description rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Winter"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Element"/>
+            <rdf:Description rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Humour"/>
+            <rdf:Description rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Season"/>
+            <rdf:Description rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#temperment"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Air"/>
+            <rdf:Description rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Earth"/>
+            <rdf:Description rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Fire"/>
+            <rdf:Description rdf:about="http://www.cs.man.ac.uk/~stevensr/ontology/humours.owl#Water"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.2.3.1787) http://owlapi.sourceforge.net -->
+
